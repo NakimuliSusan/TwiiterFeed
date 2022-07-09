@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvTweets"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@+id/imgProfile"
+            app:layout_constraintTop_toTopOf="@+id/imgProfile"
+            tools:text="Janedoe" />
+
+        <TextView
+            android:id="@+id/tvHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toEndOf="@+id/tvName"
+            app:layout_constraintTop_toTopOf="@+id/tvName"
+            tools:text="Janedoe" />
+
+        <TextView
+            android:id="@+id/tvTweet"
+            android:layout_width="232dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgProfile"
+            app:layout_constraintTop_toBottomOf="@+id/tvHandle"
+            tools:text="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" />
+
+        <TextView
+            android:id="@+id/tvCount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imgRetweet"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgComments"
+            app:layout_constraintTop_toTopOf="@+id/imgComments"
+            tools:text="234" />
+
+        <ImageView
+            android:id="@+id/imgRetweet"
+            android:layout_width="38dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvCount2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvCount1"
+            app:layout_constraintTop_toTopOf="@+id/imgComments"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/img_2" />
+
+        <ImageView
+            android:id="@+id/imgComments"
+            android:layout_width="43dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvCount1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgProfile"
+            app:srcCompat="@drawable/img_4" />
+
+        <TextView
+            android:id="@+id/tvCount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imgLike"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgRetweet"
+            app:layout_constraintTop_toTopOf="@+id/imgRetweet"
+            tools:text="100" />
+
+        <ImageView
+            android:id="@+id/imgLike"
+            android:layout_width="57dp"
+            android:layout_height="61dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvCount3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvCount2"
+            app:layout_constraintTop_toTopOf="@+id/imgRetweet"
+            app:srcCompat="@drawable/img_5" />
+
+        <TextView
+            android:id="@+id/tvCount3"
+            android:layout_width="46dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgShare"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgLike"
+            app:layout_constraintTop_toTopOf="@+id/imgLike"
+            tools:text="1234" />
+
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="39dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvCount3"
+            app:layout_constraintTop_toTopOf="@+id/imgLike"
+            app:srcCompat="@drawable/img_6" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="113dp"
+            android:layout_height="135dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pinky" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
