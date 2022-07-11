@@ -12,3 +12,4 @@ data class Tweet(
     var numberLikes : Int,
     var share : String
 )
+

@@ -25,8 +25,7 @@ class TweetAdapter (var Posts : List<Tweet>):
         holder.tvCount2.text = currentPost.retweets.toString()
         holder.tvCount3.text = currentPost.numberLikes.toString()
         holder.imgLike.setOnClickListener {
-            holder.imgLike.setColorFilter(R.color.red); // Add tint color
-            holder.imgLike.setColorFilter(null);
+            holder.imgLike.setImageResource(R.drawable.ic_baseline_favorite_24)
         }
 
     }
